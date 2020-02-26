@@ -1,0 +1,92 @@
+
+.topnav.vanish {
+  top:-70px;
+  transition: top .3s;
+}
+.topnav {
+  margin-top: -1px;
+  position: fixed;
+  top:0px;
+  background-color: #1a0f0c;
+  height: 65px;
+  width: 100%;
+  text-align: left;
+  transition: top .3s;
+  z-index: 1;
+}
+.wrap_nav {
+  margin-top:5px;
+  height: 100px;
+  margin: 0 auto;
+  width:95%;
+  max-width: 1000px;
+}
+.wrap_nav i {
+  /*
+  display: none;
+  */
+  display: block;
+  margin-top: 5px;
+  width: 30px;
+  height: 30px;
+}
+/* Navigation 아이콘 부분, 순서대로 linkedin, facebook, B 아이콘*/
+.wrap_nav li:nth-child(2) i {
+  background: url("/icon/linkedin.png");
+  background-size:cover;
+}
+.wrap_nav li:last-child i {
+  background: url("/icon/facebook.png");
+  background-size:cover;
+}
+.wrap_nav li:first-child i {
+  margin-top: 3px;
+  width: 40px;
+  height: 40px;
+  display: block;
+  background: url("/icon/main.png");
+  background-size:cover;
+}
+nav li:first-child {
+  float: left;
+  margin-left:0;
+}
+nav li {
+  float: right;
+  position: relative;
+  top:0px;
+  list-style: none;
+  margin-left:1.5%;
+  cursor: pointer;
+  display: inline;
+  top:10px;
+}
+@media ( max-width: 768px ) {
+
+  .topnav.vanish {
+    top:-70px;
+    transition: top .3s;
+  }
+  .topnav {
+    position: fixed;
+    top:-1px;
+    background-color: #1a0f0c;
+    position: fixed;
+    height: 65px;
+    width: 100%;
+    text-align: left;
+    transition: top .3s;
+  }
+  .wrap_nav {
+    margin:0 auto;
+    width: 90%;
+    max-width: 768px;
+  }
+  nav li {
+    float: right;
+    margin-left:3%;
+    cursor: pointer;
+    display: inline;
+    top:10px;
+  }
+}

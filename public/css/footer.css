@@ -1,0 +1,52 @@
+footer {
+  position: relative;
+  margin-top: 150px;
+  bottom:0px;
+  height: 130px;
+  text-align: left;
+  width: 100%;
+  background-color: #1a0f0c;
+  color:#9a9a9a;
+}
+footer #c {
+  display: block;
+  margin:0 auto;
+  width: 80%;
+  max-width: 1100px;
+  padding-top:60px;
+}
+footer i {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+footer i:first-child {
+  background-color: white;
+    background: url("/icon/facebook.png");
+  background-size:cover;
+}
+footer i:nth-child(2) {
+  background: url("/icon/linkedin.png");
+  background-size:cover;
+}
+@media ( max-width: 768px ) {
+  footer {
+    display: none;
+    position: relative;
+    margin-top: 150px;
+    bottom:0px;
+    height: 130px;
+    text-align: left;
+    width: 100%;
+    background-color: #1a0f0c;
+    color:#9a9a9a;
+  }
+  footer #c {
+    display: block;
+    margin:0 auto;
+    width: 100%;
+    padding-top:60px;
+  }
+}

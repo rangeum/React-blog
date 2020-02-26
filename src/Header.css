@@ -1,0 +1,49 @@
+header {
+  background-color: #1a0f0c;
+  height: 300px;
+  width: 100%;
+}
+header::selection {
+  background-color: none;
+  color: none;
+}
+h1 {
+  font-size: 2em;
+}
+.title {
+  margin: 0 auto;
+  position: relative;
+  text-align: left;
+  top:142px;
+  width:95%;
+  max-width: 1000px;
+}
+.title h1 {
+  display: inline-block;
+  margin-top:10px;
+  color:white;
+  font-weight: normal;
+  font-size: 2.5em;
+}
+header .title h1:hover {
+  cursor:default;
+}
+@media ( max-width: 768px ) {
+  header {
+    display: block;
+    background-color: #1a0f0c;
+    /* background-color: pink; */
+    height: 250px;
+    color:white;
+    margin-top:-22px;
+    color:red;
+    max-width:768px;
+  }
+  header .title {
+    margin: 0 auto;
+    text-align: left;
+    top:122px;
+    width:90%;
+    max-width:768px;
+  }
+}
